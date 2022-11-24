@@ -7,3 +7,32 @@
 body {
     font-family: 'Crimson Text', serif;
 }
+
+.wrapper {
+    width: 100vw;
+    height:100vh ;
+    display: flex;
+    /* got code snipit from https://www.makeuseof.com/css-background-gradients/ */
+    background:linear-gradient( 95.2deg, rgb(185, 252, 173) 26.8%, rgb(246, 192, 205) 64% ); 
+    
+      }
+      .title {
+        padding-left:30px;
+        width: 700px; 
+        border: 2px solid white ;
+        border-radius: 10px;
+        margin-top: 50px;
+        height: 140px;
+        display: flex;
+        }
+      
+      .score {
+        width: 500px; 
+        border-radius: 15px;
+        margin-top: 50px;
+        height: 140px;
+        display: flex;
+        justify-content: space-between;
+        color: hotpink;
+        
+        }
