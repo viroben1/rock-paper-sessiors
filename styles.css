@@ -1,0 +1,9 @@
+* {
+    padding: 0;
+    margin: auto;
+    box-sizing: content-box;
+}
+
+body {
+    font-family: 'Crimson Text', serif;
+}
