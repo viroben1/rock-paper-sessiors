@@ -1,54 +1,61 @@
-* {
-    padding: 0;
-    margin: auto;
-    box-sizing: content-box;
-}
-
-body {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
     font-family: 'Crimson Text', serif;
-}
+   }
 
-.wrapper {
+    .wrapper {
     width: 100vw;
     height:100vh ;
      /* got code snipit from https://www.makeuseof.com/css-background-gradients/ */
     background:linear-gradient( 95.2deg, rgb(185, 252, 173) 26.8%, rgb(246, 192, 205) 64% ); 
     flex-direction: column;
     align-items: center;
-      }
+    justify-content: space-between;
+    
+   }
       
       .title {
         margin-left:30px;
-         }
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 5px;
+        justify-content: space-between;
+    }
       
       .scorepanel {
         width: 500px; 
         border-radius: 15px;
-        margin-top: 50px;
+        margin-left: 50px;
         height: 140px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
-         }
+        justify-content: space-between;
+      }
 
         .score{
             height: 140px;
             width: 114px;
             background-color:hotpink ;
             border-radius: 7px;
-            margin-right: 20px;
+            margin-left: 20px;
             display: flex;
             flex-direction: column;
             justify-content:center;
             align-items: center;
             color: springgreen;
-         }
+            justify-content: space-between;
+        }
 
          .score h1 {
             color: royalblue ;
             font-size: 40px;
-            
-         }
+            justify-content: space-between;
+        }
 
          .score p {
             font-size: 30px;
@@ -56,5 +63,44 @@ body {
             line-height: 25px;
             letter-spacing: 5px;
             color: #00ff00;
+            justify-content: space-between;
+       }
 
-         }
+       #buttons {
+        width: 800px;
+        height: 820px;
+        display: flex;
+        margin-top: 100px;
+        flex-wrap: wrap;
+        font-size: 500px;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 50px;
+        }
+        button #img {
+            width: 300px;
+            height: 300px;
+            display: inline-flexbox;
+            color: #00ff00;
+            
+        }
+       
+       .buttonrock{
+        margin-right: 30px;
+        
+       }
+       .buttonpaper{
+        margin-left: 30px;
+     }
+      .buttonsessiors {
+       margin-top: 20px;
+      }
+
+      .button {
+        cursor: pointer;
+        transition: all .20s;
+      } 
+
+      .button:hover{
+        transform: translate3d(1px ,-7px, 1px);;
+      }

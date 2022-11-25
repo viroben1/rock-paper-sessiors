@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rock paper sessiors</title>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="/rock-paper-sessiors.js"></script>
 </head>
+
 <body>
     <div class="wrapper">
+        <button class="title">Rock paper sessiors</button>
         <div class="scorepanel"></div>
-        <div class="title">
-            <img src="/assets/title.jpg" alt="title">
-            <div class="score">
+        <div class="score">
                 <p>score</p>
                 <h1>0</h1>
-            </div>
-        </div>
-    </div>
-        <div class="emoji">
-        <div class ="paper">
-        <img src="/assets/paper.jpg" alt="paper">
-        </div>
-        <div class="rock">
-          <img src="/assets/rock.jpg" alt="rock">
-        </div>
-        <div class="sessiors">
-           <img src="/assets/sessiors.jpg" alt="sessiors">
-        </div>
-    </div>
-    
-</body>
+</div>
+    <button id="image">
+        <button class="button rock"><img src="assets/rock.jpg" onclick="chooseUserButton('rock')" alt="rock">
+        </button>
+    <button class="button paper"><img src="assets/paper.jpg" onclick="chooseUserButton('paper')" alt="paper">
+    </button>
+    <button class="button seccoirs"><img src="assets/sessiors.jpg"onclick="chooseUserButton('sessiors')" alt="seccoirs">
+    </button>
+    </button>
+  </div>
+ </body>
 </html>
