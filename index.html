@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rock paper sessiors</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="/rock-paper-sessiors.js"></script>
+    <title>ROCK-SESSIORS-PAPER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
 </head>
-
 <body>
-    <div class="wrapper">
-        <button class="title">Rock paper sessiors</button>
-        <div class="scorepanel"></div>
-        <div class="score">
-                <p>score</p>
-                <h1>0</h1>
-</div>
-    <button id="image">
-        <button class="button rock"><img src="assets/rock.jpg" onclick="chooseUserButton('rock')" alt="rock">
-        </button>
-    <button class="button paper"><img src="assets/paper.jpg" onclick="chooseUserButton('paper')" alt="paper">
-    </button>
-    <button class="button seccoirs"><img src="assets/sessiors.jpg"onclick="chooseUserButton('sessiors')" alt="seccoirs">
-    </button>
-    </button>
-  </div>
- </body>
+    
+    <div id="container">
+        <div id="heading-container">
+            <h1>Rock<br>Sessiors<br>Paper</h1>
+            <div id="scoreboard-container">
+                <!-- got code below from https://www.codewithrandom.com/2022/11/10/rock-paper-scissors-game-javascript/ -->
+                <div id="scores">
+                    <p>Computer : 
+                        <span id="computer_score">0</span>    
+                    </p>
+                    <p>
+                        You :
+                        <span id="user_score">0</span>
+                    </p>
+                </div>
+                <!-- got code abovefrom https://www.codewithrandom.com/2022/11/10/rock-paper-scissors-game-javascript/ -->
+        </div>
+    </div
+     
+      -->
+    <!-- got image pictures from here 
+         https://raw.githubusercontent.com/codingclub12/RockPaperScissors/master/scissors.PNG 
+       https://github.com/codingclub12/RockPaperScissors/blob/master/paper.PNG
+     https://github.com/codingclub12/RockPaperScissors/blob/master/rock.PNG  -->
+    
+     ><div id="results">
+        <p>Sessiors Cuts Paper. You Win </p>
+    </div>
+    <div id="options">
+        <div class="option-choices" id="rock" > 
+           <div class="option-choices" id="sessiors"></div>
+            <div class="option-choices" id="paper"></div>
+            <button class="images"><img src="/assets/rock.png" alt=""></button>
+            <button class="images"><img src="/assets/scissors.png" alt=""></button>
+            <button class="images"><img src="/assets/paper (1).png" alt=""></button>
+        </div>
+    </div>
+    <p id="maneuver-message">Choose Your Move</p>
+
+
+</body>
 </html>
