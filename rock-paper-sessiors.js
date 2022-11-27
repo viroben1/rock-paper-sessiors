@@ -37,8 +37,6 @@ function draw (playerChoice, nonPlayerComputerChoice) {
 }
 
 function match (playerChoice, nonPlayerComputerChoice) {
-const nonPlayerComputerChoice = nonPlayerComputerChoice ();
-
   switch (playerChoice + nonPlayerComputerChoice) {
   case 'rockpaper':
   case 'paperrock':
