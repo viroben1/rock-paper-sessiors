@@ -59,12 +59,6 @@
         color: hotpink;
     }
 
-    #results p {
-        text-align: center;
-        font-family:'Crimson Text', serif ;
-        font-weight: bolder;
-    }
-
     #options {
         margin-top: 50px;
         text-align: center;

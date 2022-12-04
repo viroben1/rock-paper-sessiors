@@ -1,9 +1,9 @@
-const playerScore = 0;
+const  playerScore = 0;
 const nonPlayerComputerScore = 0;
 const playerScore_span = document.getElementById("#playerScore");
 const nonPlayerComputerScore_span = document.getElementById("#nonPlayerComputerScore");
 const scoreBoard_div = document.querySelector("#score-board-container");
-const results_p = document.querySelector("#results > p");
+const results_div = document.querySelector("#results");
 const rock_div = document.getElementById("rock");
 const sessiors_div = document.getElementById("sessiors");
 const paper_div = document.getElementById("paper");
@@ -13,30 +13,30 @@ function getnonPlayerComputerChoice () {
     const randomNumber = Math.floor(Math.random() * 3);
     return choices [randomNumber];
 }
-getnonPlayerComputerChoice  ();
+getnonPlayerComputerChoice();
 
 
 function wins (playerChoice, nonPlayerComputerChoice) {
     playerScore++;
     playerScore_span.innerHTML = playerScore;
     nonPlayerComputerScore_span.innerHTML = nonPlayerComputerScore;
-    results_p.innerHTML = playerChoice + "beats" + nonPlayerComputerChoice + "player won!";
-};
+    results_div.innerHTML = (playerChoice + "beats" + nonPlayerComputerChoice + "player won!");
+}
 
 
 function lose (playerChoice, nonPlayerComputerChoice) {
     nonPlayerComputerScore ++;
     playerScore_span.innerHTML = playerScore;
     nonPlayerComputerScore_span.innerHTML = nonPlayerComputerScore;
-    results_p.innerHTML = nonPlayerComputerChoice + "beats" + playerChoice + "nonPlayerComputer won!";
-};
+    results_div.innerHTML = (nonPlayerComputerChoice + "beats" + playerChoice + "nonPlayerComputer won!");
+}
 
 
 function draw (playerChoice, nonPlayerComputerChoice) {
     playerScore_span.innerHTML = playerScore;
     nonPlayerComputerScore_span.innerHTML = nonPlayerComputerScore;
-    results_p.innerHTML = nonPlayerComputerChoice + "tie game" + playerChoice + "there is a tie! pick again";
-};
+    results_div.innerHTML = (nonPlayerComputerChoice + "tie game" + playerChoice + "there is a tie! pick again!");
+}
 
 
 function match (playerChoice, nonPlayerComputerChoice) {
@@ -63,18 +63,18 @@ function match (playerChoice, nonPlayerComputerChoice) {
 
 function prime () {
     rock_div.addEventListener('click' , function() {
-        match("rock");
+        match("rock")
     });
     
     sessiors_div.addEventListener('click' , function() {
-        match("sessiors");
+        match("sessiors")
     });
     
     paper_div.addEventListener('click' , function() {
-        match("paper");
+        match("paper")
      });
-};
+}
 
-prime();
+prime("rock" , "sessiors", "paper");
 
 
