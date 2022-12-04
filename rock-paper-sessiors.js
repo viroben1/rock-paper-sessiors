@@ -41,9 +41,9 @@ function draw (playerChoice, nonPlayerComputerChoice) {
 
 function match (playerChoice, nonPlayerComputerChoice) {
   switch (playerChoice + nonPlayerComputerChoice) {
-  case 'rock,paper':
+  case 'rock,sessiors':
   case 'paper,rock':
-  case 'sessior,spaper':
+  case 'sessior,paper':
     wins(playerChoice, nonPlayerComputerChoice);
     break;
   case 'rock,paper':
