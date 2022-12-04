@@ -21,7 +21,7 @@ function wins (playerChoice, nonPlayerComputerChoice) {
     playerScore_span.innerHTML = playerScore;
     nonPlayerComputerScore_span.innerHTML = nonPlayerComputerScore;
     results_p.innerHTML = playerChoice + "beats" + nonPlayerComputerChoice + "player won!";
-}
+};
 
 
 function lose (playerChoice, nonPlayerComputerChoice) {
@@ -29,14 +29,14 @@ function lose (playerChoice, nonPlayerComputerChoice) {
     playerScore_span.innerHTML = playerScore;
     nonPlayerComputerScore_span.innerHTML = nonPlayerComputerScore;
     results_p.innerHTML = nonPlayerComputerChoice + "beats" + playerChoice + "nonPlayerComputer won!";
-}
+};
 
 
 function draw (playerChoice, nonPlayerComputerChoice) {
     playerScore_span.innerHTML = playerScore;
     nonPlayerComputerScore_span.innerHTML = nonPlayerComputerScore;
     results_p.innerHTML = nonPlayerComputerChoice + "tie game" + playerChoice + "there is a tie! pick again";
-}
+};
 
 
 function match (playerChoice, nonPlayerComputerChoice) {
@@ -51,12 +51,12 @@ function match (playerChoice, nonPlayerComputerChoice) {
   case 'sessiors,rock':
     lose(playerChoice, nonPlayerComputerChoice);
     break;
-  case "rock,rock":
-  case "paper,paper":
-  case "sessior,ssessiors":
+  case 'rock,rock':
+  case 'paper,paper':
+  case 'sessior,ssessiors':
     draw(playerChoice, nonPlayerComputerChoice);
     break;
-}
+};
 }
 
 
@@ -73,7 +73,7 @@ function prime () {
     paper_div.addEventListener('click' , function() {
         match("paper");
      });
-}
+};
 
 prime();
 
