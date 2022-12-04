@@ -17,7 +17,7 @@ getnonPlayerComputerChoice  ();
 
 
 function wins (playerChoice, nonPlayerComputerChoice) {
-    playerScore++;
+    playerScore++
     playerScore_span.innerHTML = playerScore;
     nonPlayerComputerScore_span.innerHTML = nonPlayerComputerScore;
     results_div.innerHTML = playerChoice + "beats" + nonPlayerComputerChoice + "player won!";
